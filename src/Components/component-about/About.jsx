@@ -6,8 +6,8 @@ const About = () =>{
    
     return(
         <section id='about'>
-            <div className='about_container'>
-                <h2 className='section_title'>A Propos</h2>
+            <div className='about_container col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12'>
+                <h2 className='section_title '>A PROPOS</h2>
                 <div className="white_line"></div>
                 <p className='text-light'>Je suis Adil Boussalem, Bachelor en Base de données et développement, 
                     diplômé de l’école MIAGE, passionné par le Developpement web. J'ai créé ce site pour 

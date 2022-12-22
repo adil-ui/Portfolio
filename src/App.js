@@ -6,6 +6,7 @@ import Navbar  from "./Components/component-header/component-navbar/Navbar";
 import Hero from './Components/component-header/Hero'
 import About from "./Components/component-about/About";
 import Education from "./Components/component-education/Education";
+import Skills from "./Components/component-skills/Skills";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -47,7 +48,7 @@ const App = () => {
                         },
                         repulse: {
                             distance: 200,
-                            duration: 0.4,
+                            duration: 0.1,
                         },
                     },
                 },
@@ -72,7 +73,7 @@ const App = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 1.3,
+                        speed: 1.4,
                         straight: false,
                     },
                     number: {
@@ -102,6 +103,7 @@ const App = () => {
             <main>
                 <About />
                 <Education />
+                <Skills />
             </main>
             </>
 

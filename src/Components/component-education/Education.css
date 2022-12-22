@@ -3,6 +3,7 @@
     position: relative;
     padding: 80px 0;
     color: white;
+    margin: auto;
    
 }
 .education p{
@@ -16,17 +17,18 @@
 }
 .education_degree {
     width: 450px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #191d20;
     padding: 30px 40px;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 24px;
+
 }
 .education_degree p:first-child{
     color: #ff6542;
+    font-size: 21px;
+    line-height: 1.8;
 }
-.pos_right{
-    display: flex;
-    justify-content: end;
-}
+
 .year{
     background-color: #ff6542;
     width: 100px;
@@ -38,6 +40,8 @@
     text-align: center;
     padding: 10px;
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 24px;
+    z-index: 10;
 
 }
 .education_year{
@@ -45,6 +49,7 @@
     top: 1%;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 1;
 }
 .year p{
     margin: 0;
@@ -57,4 +62,6 @@
     width: 5px;
     height: 200px;
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 24px;
+
 }

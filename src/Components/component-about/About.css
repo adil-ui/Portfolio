@@ -1,17 +1,16 @@
 #about{
-    background-color: #212529;
+    background-color: #191d20;
     padding: 60px 0;
+    box-shadow: rgba(0, 0, 0, 0.402) -0px 8px 14px;
+
 }
+
 .about_container{
-    width: 48%;
     margin: auto;
     text-align: center;
 
 }
-.about_container h2{
-    font-size: 2.5rem;
-    
-}
+
 .about_container p{
     font-size: 18.5px;
     line-height: 2.2;
@@ -27,8 +26,6 @@
     color: #f06040;
     font-weight: 600;
     text-align: center;
-    background-color: #212529ce;
-    width: 25%;
     padding: 10px 0;
-    margin: auto;
+    font-size: 2.5rem;
 }

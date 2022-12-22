@@ -16,7 +16,7 @@ const Hero = () =>{
         <div className="myName">
           <div className="App">
             <h1 className='text-light fw-bold'  >{text}
-            <Cursor cursorColor='white' cursorStyle='_' />
+            <Cursor cursorColor='white'  />
             </h1>
           </div>
         </div>

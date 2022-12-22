@@ -1,9 +1,10 @@
 import './navbar.css'
+
 const Navbar = () =>{
     return(
-        <nav className="navbar navbar-expand-lg bg-transparent py-3">
+        <nav className="navbar fixed-top navbar-expand-lg bg-transparent">
             <div className="container-fluid">
-                <button className="navbar-toggler bg-light mb-4 position-absolute top-0 mt-3 end-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler bg-light mb-4 position-absolute top-0 mt-3 end-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse " id="navbarSupportedContent">
@@ -18,7 +19,10 @@ const Navbar = () =>{
                             <a className="nav-link text-light fw-bolder " href="#formation">EDUCATION</a>
                         </li>
                         <li className="nav-item me-4">
-                            <a className="nav-link text-light fw-bolder " href="#projet">PROJETS</a>
+                            <a className="nav-link text-light fw-bolder " href="#competences">COMPETENCES</a>
+                        </li>
+                        <li className="nav-item me-4">
+                            <a className="nav-link text-light fw-bolder " href="#projets">PROJETS</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-light fw-bolder " href="#contact">CONTACT</a>
