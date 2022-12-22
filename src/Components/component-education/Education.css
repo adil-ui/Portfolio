@@ -1,0 +1,60 @@
+
+.education{
+    position: relative;
+    padding: 80px 0;
+    color: white;
+   
+}
+.education p{
+    margin: 0 ;
+}
+.education_container{
+    width: 75%;
+    margin: 50px auto 0;
+    position: relative;
+
+}
+.education_degree {
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+.education_degree p:first-child{
+    color: #ff6542;
+}
+.pos_right{
+    display: flex;
+    justify-content: end;
+}
+.year{
+    background-color: #ff6542;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+
+}
+.education_year{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.year p{
+    margin: 0;
+    color: #212529;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.line_verticale{
+    background-color: #ff6542;
+    width: 5px;
+    height: 200px;
+    margin: auto;
+}

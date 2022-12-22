@@ -1,0 +1,6 @@
+nav ul li a{
+    font-size: 18px !important;
+}
+nav ul li a:hover{
+    color: rgb(199, 199, 199) !important;
+}
