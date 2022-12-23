@@ -46,7 +46,7 @@
 }
 .education_year{
     position: absolute;
-    top: 1%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
@@ -63,5 +63,9 @@
     height: 200px;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 24px;
+
+}
+.education_year .year_container:nth-child(2) .line_verticale{
+    height: 160px;
 
 }

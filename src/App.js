@@ -7,6 +7,7 @@ import Hero from './Components/component-header/Hero'
 import About from "./Components/component-about/About";
 import Education from "./Components/component-education/Education";
 import Skills from "./Components/component-skills/Skills";
+import Project from "./Components/component-project/Project";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -95,7 +96,7 @@ const App = () => {
                 },
                 detectRetina: true,
             }} />
-            <header>
+            <header id="top">
                 <Navbar />
                 <Hero />
                 <div className='btn_down'><a href="#about"><i class="bi bi-arrow-down-circle-fill"></i></a></div>
@@ -104,6 +105,7 @@ const App = () => {
                 <About />
                 <Education />
                 <Skills />
+                <Project />
             </main>
             </>
 

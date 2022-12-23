@@ -9,9 +9,12 @@ function checkSize() {
   if($(window).width() < 767)
   {
     console.log("Resize",$('nav'));
-      $('nav').removeClass("bg-transparent").css('background-color', '#F06040')
-      $('nav').css("padding", '0')
-
+      $('nav').removeClass("fixed-top")
+      $('nav').removeClass("bg-transparent").addClass('bg-dark')
+  } else {
+    $('nav').removeClass("bg-dark").css("background-color", '#F06040')
+    $('nav').css("box-shadow", "#000000 0px 0px 35px")
+    $('nav').addClass("fixed-top")
   }
 
 }
@@ -29,8 +32,9 @@ $(document).ready(() => {
             $('nav').removeClass("bg-transparent").css("background-color", '#F06040')
             $('nav').css("box-shadow", "#000000 0px 0px 35px")
         } else if($(window).width() >= 767) {
-            $('nav').addClass('bg-transparent');
+            $('nav').addClass("fixed-top")
             $('nav').css("box-shadow", 'none')
+            $('nav').removeClass('bg-dark').addClass('bg-transparent');
         }
         
     })

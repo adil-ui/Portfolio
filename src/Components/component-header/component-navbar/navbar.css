@@ -4,7 +4,10 @@ nav{
     transition: all 1s ease;
 }
 nav ul li a{
-    font-size: 18px !important;
+    font-size: 1.15rem !important;
+}
+nav li{
+    padding: 10px 0;
 }
 nav ul li a:hover{
     color: rgb(199, 199, 199) !important;
