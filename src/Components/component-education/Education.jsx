@@ -1,3 +1,7 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import './Education.css'
 
 const educations = [
@@ -25,13 +29,16 @@ const educations = [
 ]
 
 const Education = () =>{
+  useEffect(() => {
+    AOS.init();
+  }, [])
     return (
       <section className="education" id="formation">
         <h2 className="section_title">EDUCATION</h2>
         <div className="white_line"></div>
         <div className="education_container">
           {educations.map(education => (
-                    <div className={`${education.right ? "d-md-flex d-sm-block d-block justify-content-end mt-5 pt-5" : "pt-4"}`}>
+                    <div data-aos="zoom-out" data-aos-duration="1000"  className={`${education.right ? "d-md-flex d-sm-block d-block justify-content-end mt-5 pt-5" : "pt-4"}`}>
                       <div className="education_degree mt-4">
                         <p className="fw-semibold mb-4">{ education.title }</p>
                         <p className="fs-5  text-white text-opacity-75">{ education.school } </p>

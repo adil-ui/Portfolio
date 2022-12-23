@@ -8,6 +8,8 @@ import About from "./Components/component-about/About";
 import Education from "./Components/component-education/Education";
 import Skills from "./Components/component-skills/Skills";
 import Project from "./Components/component-project/Project";
+import Contact from "./Components/component-contact/Contact";
+import Footer from "./Components/component-footer/Footer";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -106,7 +108,9 @@ const App = () => {
                 <Education />
                 <Skills />
                 <Project />
+                <Contact />
             </main>
+            <Footer />
             </>
 
 

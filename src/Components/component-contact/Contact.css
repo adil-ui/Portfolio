@@ -1,0 +1,31 @@
+.contact{
+    padding: 80px 0;
+   
+}
+.contact button{
+    background-color: #f06040 !important;
+    padding: 12px 50px !important;
+}
+.contact button:hover{
+    background-color: #b94329 !important;
+}
+.contact textarea{
+    height: 180px !important;
+}
+.contact input, .contact textarea{
+    background-color: #121517;
+    border: 1px solid #393939;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.171) 0px 8px 15px;
+    padding: 0 50px;
+}
+.contact input:focus, .contact textarea:focus{
+    background-color: #121517;
+    border: 1px solid #393939;
+    box-shadow: none;
+    color: white;
+
+}
+.contact label{
+    left: 5px !important;
+}

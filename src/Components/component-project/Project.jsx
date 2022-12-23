@@ -57,6 +57,7 @@ let projectItem = [
    
 ]
 const Project = () =>{
+    
     return(
         <section className="project" id="projets">
             <h2 className="section_title">MES PROJETS</h2>
@@ -64,13 +65,13 @@ const Project = () =>{
 
             <div className="project_container row g-0">
                 {projectItem.map(item =>(
-                     <div className="myproject col-4">
-                        <div className='myproject_container'>
+                     <div className="myproject col-4" >
+                        <div className='myproject_container' data-aos="flip-up" data-aos-duration="500" data-aos-easing="ease-in-sine" >
                             <div className="project_img">
                                 <a href={item.href}  target='_blank' rel="noopener noreferrer"><img src={item.image}  alt="project" /></a>
                             </div>
                             <div className='title_techno p-4'>
-                                <div className="project_title pb-4">
+                                <div className="project_title pb-2">
                                     <a href={item.href} className="text-light" target='_blank'  rel="noreferrer noopener"><h5 className='fw-semibold'>{ item.title}</h5></a>
                                 </div>
                                 <div className="project_techno pb-3">

@@ -62,7 +62,7 @@ const Skills = () =>{
         <div className='skills_container mt-5 pt-4'>
                 { items.map(item =>{
                     return(
-                        <div className='mySkills'>
+                        <div className='mySkills' data-aos="flip-left"  data-aos-duration="2500" >
                             <div>
                                 <img src={ item.image } alt={ item.alt } />
                                 <h4>{ item.title }</h4>

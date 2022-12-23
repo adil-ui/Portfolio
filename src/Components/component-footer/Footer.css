@@ -1,0 +1,11 @@
+
+footer{
+    position: relative;
+    background-color: #2125299d;
+}
+.footer_name{
+    color: #f06040;
+}
+.footer_name:hover{
+    color: #c45238;
+}
