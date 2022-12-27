@@ -110,7 +110,7 @@ const App = () => {
             <header id="Accueil">
                 <Navbar />
                 <Hero />
-                <div className='btn_down'><a href="#about"><i class="bi bi-arrow-down-circle-fill"></i></a></div>
+                <a href="#about" className='btn_down'><i class="bi bi-chevron-double-down"></i></a>
                 <Waypoint
                 onEnter={() => handleEnter(1)}
             />
