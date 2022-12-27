@@ -1,4 +1,5 @@
 import './Skills.css'
+import { Waypoint } from 'react-waypoint'
 
 let items = [
     {
@@ -51,25 +52,43 @@ let items = [
         alt : 'mysql',
         title : 'mySql'
     },
+    {
+        image : 'assets/images/sqlserver.jfif',
+        alt : 'SqlServer',
+        title : 'SqlServer'
+    },
+    {
+        image : 'assets/images/uml.png',
+        alt : 'UML',
+        title : 'UML'
+    },
 
 ]
 
-const Skills = () =>{
+const Skills = ({handleEnter}) =>{
     return(
         <section className='skills' id='competences'>
+                            <Waypoint
+                onEnter={() => handleEnter(4)}
+            />
         <h2 className='section_title'>COMPETENCES</h2>
         <div className='white_line'></div>
-        <div className='skills_container mt-5 pt-4'>
+        <div className='skills_container mt-5 pt-4 '>
+            <div className='row g-4 mx-auto'>
                 { items.map(item =>{
                     return(
-                        <div className='mySkills' data-aos="flip-left"  data-aos-duration="2500" >
-                            <div>
-                                <img src={ item.image } alt={ item.alt } />
-                                <h4>{ item.title }</h4>
+                        <div className='mySkills col-xl-3 col-lg-4 col-md-6 col-sm-8 col-8 mx-auto' data-aos="flip-left" data-aos-duration="1000">
+                            <div className='myskills_container'  >
+                                <div>
+                                    <img src={ item.image } alt={ item.alt } />
+                                    <h4>{ item.title }</h4>
+                                </div>
                             </div>
                         </div>
+                       
                     )
-                })}          
+                })}  
+            </div>        
         </div>
     </section>
     )

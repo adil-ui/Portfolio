@@ -1,8 +1,12 @@
 import './Contact.css'
+import { Waypoint } from 'react-waypoint'
 
-const Contact = () =>{
+const Contact = ({ handleEnter }) =>{
     return(
         <section className="contact" id="contact">
+                            <Waypoint
+                onEnter={() => handleEnter(6)}
+            />
             <h2 className="section_title">Contact</h2>
             <div className="white_line"></div>
             <div class="col-xxl-5 col-xl-6 col-lg-9 col-sm-11 col-11 mx-auto">

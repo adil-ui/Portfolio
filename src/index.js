@@ -27,7 +27,7 @@ $(document).ready(() => {
   })
     $(window).scroll(() => {
         if($(window).scrollTop() !== 0 && $(window).width() >= 767) {
-            $('nav').removeClass("bg-transparent").css("background-color", '#F06040')
+            $('nav').removeClass("bg-transparent").css("background-color", '#212529')
             $('nav').css("box-shadow", "#000000 0px 0px 35px")
         } else if($(window).width() >= 767) {
             $('nav').addClass("fixed-top")
@@ -36,8 +36,10 @@ $(document).ready(() => {
         }
         
     })
-    
-  
+   $(".nav-item").on("click", event => {
+    $(".active").removeClass("active");
+    event.currentTarget.classList.add("active");
+   }) 
 })
 
     

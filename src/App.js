@@ -1,6 +1,8 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import $ from "jquery";
+import { Waypoint } from "react-waypoint";
 import './App.css'
 import Navbar  from "./Components/component-header/component-navbar/Navbar";
 import Hero from './Components/component-header/Hero'
@@ -20,6 +22,13 @@ const App = () => {
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
+
+    const handleEnter = (index) => {
+        $(".active").removeClass("active");
+        $(`.nav-item:nth-of-type(${index})`).addClass("active")
+    }
+
+    
 
     return (
         <><Particles
@@ -98,17 +107,20 @@ const App = () => {
                 },
                 detectRetina: true,
             }} />
-            <header id="top">
+            <header id="Accueil">
                 <Navbar />
                 <Hero />
                 <div className='btn_down'><a href="#about"><i class="bi bi-arrow-down-circle-fill"></i></a></div>
+                <Waypoint
+                onEnter={() => handleEnter(1)}
+            />
             </header>
             <main>
-                <About />
-                <Education />
-                <Skills />
-                <Project />
-                <Contact />
+                <About handleEnter={handleEnter} />
+                <Education handleEnter={handleEnter} />
+                <Skills handleEnter={handleEnter}/>
+                <Project handleEnter={handleEnter}/>
+                <Contact handleEnter={handleEnter} />
             </main>
             <Footer />
             </>

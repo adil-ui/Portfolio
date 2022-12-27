@@ -3,7 +3,7 @@ import './navbar.css'
 let navItem = [
     {
         content : 'ACCUEIL',
-        href : '#top'
+        href : '#Accueil'
     },
     {
         content : 'A PROPOS',
@@ -38,7 +38,7 @@ const Navbar = () =>{
                         {
                             navItem.map(item =>{
                                 return(
-                                    <li className="nav-item me-4">
+                                    <li className={`nav-item me-4 ${item.content === "ACCUEIL" ? 'active' : ""}`}>
                                         <a className="nav-link fw-bolder text-light"  href={item.href}>{item.content}</a>
                                     </li>
                                 )

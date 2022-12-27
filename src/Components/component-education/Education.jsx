@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Waypoint } from 'react-waypoint';
 
 import './Education.css'
 
@@ -28,18 +29,21 @@ const educations = [
 
 ]
 
-const Education = () =>{
+const Education = ({ handleEnter }) =>{
   useEffect(() => {
     AOS.init();
   }, [])
     return (
       <section className="education" id="formation">
+                        <Waypoint
+                onEnter={() => handleEnter(3)}
+            />
         <h2 className="section_title">EDUCATION</h2>
         <div className="white_line"></div>
-        <div className="education_container">
+        <div className="education_container ">
           {educations.map(education => (
-                    <div data-aos="zoom-out" data-aos-duration="1000"  className={`${education.right ? "d-md-flex d-sm-block d-block justify-content-end mt-5 pt-5" : "pt-4"}`}>
-                      <div className="education_degree mt-4">
+                    <div data-aos="zoom-out" data-aos-duration="1000"  className={`${education.right ? "row d-md-flex d-sm-block d-block justify-content-end mt-5 pt-5" : "pt-4"}`}>
+                      <div className="education_degree mt-4 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12">
                         <p className="fw-semibold mb-4">{ education.title }</p>
                         <p className="fs-5  text-white text-opacity-75">{ education.school } </p>
                       </div>

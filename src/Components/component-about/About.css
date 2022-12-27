@@ -7,13 +7,13 @@
 
 .about_container{
     margin: auto;
-    text-align: center;
 
 }
 
-.about_container p{
+.about_text p:first-child{
     font-size: 18.5px;
-    line-height: 2.2;
+    line-height: 2.1;
+    text-align: justify;
 }
 .white_line{
     width: 100px;
@@ -28,4 +28,36 @@
     text-align: center;
     padding: 10px 0;
     font-size: 2.5rem;
+}
+.img_container{
+    border: 2px solid #f06040d2;
+    width: 190px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.img_container img{
+    width: 80%;
+}
+
+.about_container button{
+    background-color: #f06040 !important;
+    padding: 12px 50px !important;
+}
+.about_container button:hover{
+    background-color: #b94329 !important;
+    transition: .3s;
+}
+.about_container p, .about_container a{
+    color: rgb(189, 189, 189);
+}
+.about_container a:hover{
+    color: #b94329;
+}
+.about_container .bi{
+    font-size: 22px;
+    margin-right: 5px;
 }

@@ -4,11 +4,16 @@ nav{
     transition: all 1s ease;
 }
 nav ul li a{
-    font-size: 1.15rem !important;
+    font-size: 1rem !important;
+    transition: .5s;
 }
 nav li{
-    padding: 10px 0;
+    padding: 3px 0;
 }
 nav ul li a:hover{
-    color: rgb(199, 199, 199) !important;
+    color: #f05f40 !important;
+}
+
+nav ul li.active a {
+    color: #f05f40 !important;
 }
