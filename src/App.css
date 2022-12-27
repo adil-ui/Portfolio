@@ -33,7 +33,7 @@ header{
 }
 @keyframes btnDown {
     form{ transform: translate(0, 0)}
-    to{transform: translate(0, 45px); opacity: 0;}
+    to{transform: translate(0, 100%);}
 }
 
 .btn_down:hover{

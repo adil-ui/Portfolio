@@ -66,10 +66,10 @@ const App = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#fff",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#fff",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
