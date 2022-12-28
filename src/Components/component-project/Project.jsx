@@ -67,10 +67,10 @@ const Project = ({ handleEnter}) =>{
             <h2 className="section_title">MES PROJETS</h2>
             <div className="white_line"></div>
 
-            <div className="project_container row g-0">
+            <div className="project_container row g-0 mx-auto">
                 {projectItem.map(item =>(
                      <div className="myproject col-xl-4 col-lg-6 col-md-8 col-sm-9 col-10 mx-auto" >
-                        <div className='myproject_container' data-aos="flip-up" data-aos-duration="500" data-aos-easing="ease-in-sine" >
+                        <div className='myproject_container mx-auto' data-aos="zoom-in-up"data-aos-duration="500" data-aos-easing="ease-in-sine" >
                             <div className="project_img">
                                 <a href={item.href}  target='_blank' rel="noopener noreferrer"><img src={item.image}  alt="project" /></a>
                             </div>

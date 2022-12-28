@@ -43,13 +43,17 @@
     width: 80%;
 }
 
-.about_container button{
+.btn_cv a{
     background-color: #f06040 !important;
     padding: 12px 50px !important;
+    border: none !important;
 }
-.about_container button:hover{
-    background-color: #b94329 !important;
+.btn_cv a:hover{
+    background-color: #cc492c !important;
     transition: .3s;
+}
+.btn_cv a{
+    color: rgb(246, 246, 246) !important;
 }
 .about_container p, .about_container a{
     color: rgb(189, 189, 189);
