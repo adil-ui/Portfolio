@@ -17,7 +17,7 @@
     text-align: center;
     border-radius: 15px;
     padding: 15px;
-
+    margin: auto;
 }
 
 a{
@@ -35,7 +35,7 @@ a{
     height: 100%;
 }
 .myproject_container:hover .project_img img{
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 .project_techno span{
     background-color: #f06040;
