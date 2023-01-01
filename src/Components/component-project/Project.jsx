@@ -74,11 +74,11 @@ const Project = ({ handleEnter}) =>{
                             <div className="project_img">
                                 <a href={item.href}  target='_blank' rel="noopener noreferrer"><img src={item.image}  alt="project" /></a>
                             </div>
-                            <div className='title_techno p-4'>
+                            <div className='title_techno'>
                                 <div className="project_title pb-2">
                                     <a href={item.href} className="text-light" target='_blank'  rel="noreferrer noopener"><h5 className='fw-semibold'>{ item.title}</h5></a>
                                 </div>
-                                <div className="project_techno pb-3">
+                                <div className="project_techno pb-3 mx-auto">
                                     {item.techno.map(tech =>(
                                     <span className="text-light">{tech}</span>                               
                                     ))}

@@ -27,7 +27,7 @@ const About = ({ handleEnter }) =>{
                         <p><a href="https://github.com/adil-ui"><i class="bi bi-github"></i> Github</a></p>
                         <p><a href="https://www.linkedin.com/in/adil-boussalem-33641b202/"><i class="bi bi-linkedin"></i> Linkedin</a></p>
                         <p><i class="bi bi-telephone-fill"></i> 06 10 47 38 90</p>
-                        <div className='btn_cv'>
+                        <div className='btn_cv mt-5'>
                             <a href="assets/cv/CV.pdf" className='text-light fw-semibold rounded-1' target='_blank'  rel="noopener">Télécharger CV</a>
                         </div>
                     </div>

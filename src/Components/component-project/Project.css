@@ -9,9 +9,9 @@
 .myproject{
     margin-bottom: 40px;
 }
-.myproject_container{
-    height: 300px;
-    width: 330px;
+.myproject_container{  
+    width: 80%;
+    height: 100%;
     background-color: #121517;
     box-shadow: rgba(0, 0, 0, 0.402) 0px 8px 24px;
     text-align: center;
@@ -19,7 +19,16 @@
     padding: 15px;
     margin: auto;
 }
+@media screen and (max-width: 796px) {
+    .myproject_container{  
+        width: 100%;
+        padding: 10px 10px 20px;
 
+    }
+    .title_techno{
+        padding: 0px;
+    }
+}
 a{
     text-decoration: none;
 }
@@ -43,4 +52,7 @@ a{
     padding: 5px;
     border-radius: 5px;
     cursor: default;
+}
+.title_techno{
+    padding: 15px;
 }

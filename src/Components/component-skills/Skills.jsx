@@ -77,8 +77,8 @@ const Skills = ({handleEnter}) =>{
             <div className='row g-4 mx-auto'>
                 { items.map(item =>{
                     return(
-                        <div className='mySkills col-xl-3 col-lg-4 col-md-6 col-sm-8 col-8 mx-auto' data-aos="flip-left" data-aos-duration="1000">
-                            <div className='myskills_container'  >
+                        <div className='mySkills col-xl-2 col-lg-3 col-md-4 col-sm-6 col-8 mx-auto' data-aos="flip-left" data-aos-duration="1000">
+                            <div className='myskills_container mx-auto'  >
                                 <div>
                                     <img src={ item.image } alt={ item.alt } />
                                     <h4>{ item.title }</h4>
