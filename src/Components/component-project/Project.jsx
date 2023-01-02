@@ -1,5 +1,9 @@
 import './Project.css'
 import { Waypoint } from 'react-waypoint'
+import { useState, useEffect } from 'react'
+import { firestore } from "../../config/firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+/*
 let projectItem = [
     {
         image: 'assets/images/swipy.png',
@@ -56,8 +60,21 @@ let projectItem = [
         techno : ['HTML','CSS','JavaScript']
     },
    
-]
+]*/
 const Project = ({ handleEnter}) =>{
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        onSnapshot(collection(firestore, 'projects'), querySnapshot => {
+            const firebaseProjects = []
+            querySnapshot.forEach(project => {
+                console.log(project);
+                firebaseProjects.push(project.data());
+            })   
+            
+            setProjects(firebaseProjects);
+        })
+    }, [])
     
     return(
         <section className="project" id="projets">
@@ -68,7 +85,7 @@ const Project = ({ handleEnter}) =>{
             <div className="white_line"></div>
 
             <div className="project_container row g-0 mx-auto">
-                {projectItem.map(item =>(
+                {projects.map(item =>(
                      <div className="myproject col-xl-4 col-lg-6 col-md-8 col-sm-9 col-11 mx-auto" >
                         <div className='myproject_container' data-aos="zoom-in-up"data-aos-duration="500" data-aos-easing="ease-in-sine" >
                             <div className="project_img">

@@ -14,10 +14,10 @@ const About = ({ handleEnter }) =>{
                 <h2 className='section_title '>A PROPOS</h2>
                 <div className="white_line mb-5"></div>
                 <div className='d-flex justify-content-xl-between justify-content-lg-center justify-content-center align-items-start row g-0'> 
-                    <div className='img_container col-xl-3 col-lg-4 col-md-6 col-sm-8 col-8'>
+                    <div className='img_container col-xl-3 col-lg-4 col-md-6 col-sm-8 col-8' data-aos="fade-right" data-aos-duration="1000">
                         <img src="assets/images/profil.png"  alt="profil" />
                     </div>
-                    <div className='about_text col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 text-xl-start text-lg-center text-center'>
+                    <div className='about_text col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 text-xl-start text-lg-center text-center' data-aos="fade-left" data-aos-duration="1000">
                         <p className='text-light'>Je suis Adil Boussalem, Bachelor en Base de données et développement, 
                             diplômé de l’école MIAGE, passionné par le Developpement web. J'ai créé ce site pour 
                             que vous puissiez me connaître personnellement à travers mes projets. 

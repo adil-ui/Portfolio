@@ -15,7 +15,6 @@ import Footer from "./Components/component-footer/Footer";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
         await loadFull(engine);
     }, []);
 
@@ -40,6 +39,9 @@ const App = () => {
                     color: {
                         value: "#212529",
                     },
+                },
+                fullScreen: {
+                    zIndex: -1
                 },
                 fpsLimit: 120,
                 interactivity: {
@@ -111,9 +113,9 @@ const App = () => {
                 <Navbar />
                 <Hero />
                 <a href="#about" className='btn_down'><i class="bi bi-chevron-double-down"></i></a>
-                <Waypoint
-                onEnter={() => handleEnter(1)}
-            />
+                    <Waypoint
+                    onEnter={() => handleEnter(1)}
+                />
             </header>
             <main>
                 <About handleEnter={handleEnter} />

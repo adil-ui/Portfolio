@@ -8,11 +8,9 @@ import $ from 'jquery'
 function checkSize() {
   if($(window).width() < 767)
   {
-      $('nav').removeClass("fixed-top")
       $('nav').removeClass("bg-transparent").addClass('bg-dark')
   } else {
     $('nav').removeClass("bg-dark").addClass("bg-transparent");
-    $('nav').addClass("fixed-top")
   }
 
 }

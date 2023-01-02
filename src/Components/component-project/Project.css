@@ -19,16 +19,7 @@
     padding: 15px;
     margin: auto;
 }
-@media screen and (max-width: 796px) {
-    .myproject_container{  
-        width: 100%;
-        padding: 10px 10px 20px;
 
-    }
-    .title_techno{
-        padding: 0px;
-    }
-}
 a{
     text-decoration: none;
 }
@@ -55,4 +46,14 @@ a{
 }
 .title_techno{
     padding: 15px;
+}
+@media screen and (max-width: 796px) {
+    .myproject_container{  
+        width: 100%;
+        padding: 10px 10px 20px;
+
+    }
+    .title_techno{
+        padding: 10px;
+    }
 }

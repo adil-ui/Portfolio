@@ -1,6 +1,9 @@
 import './Skills.css'
 import { Waypoint } from 'react-waypoint'
-
+import { useEffect, useState } from 'react';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { firestore } from '../../config/firebase';
+/*
 let items = [
     {
         image : 'assets/images/html.png',
@@ -64,8 +67,20 @@ let items = [
     },
 
 ]
-
+*/
 const Skills = ({handleEnter}) =>{
+    const [skills, setSkills] = useState([]);
+
+    useEffect(() => {
+        onSnapshot(collection(firestore, 'Skills'), querySnapshot => {
+            const firebaseSkills = []
+            querySnapshot.forEach(skill => {
+                console.log(skill);
+                firebaseSkills.push(skill.data());
+            })              
+            setSkills(firebaseSkills);
+        })
+    }, [])
     return(
         <section className='skills' id='competences'>
                             <Waypoint
@@ -75,7 +90,7 @@ const Skills = ({handleEnter}) =>{
         <div className='white_line'></div>
         <div className='skills_container mt-5 pt-4 '>
             <div className='row g-4 mx-auto'>
-                { items.map(item =>{
+                { skills.map(item =>{
                     return(
                         <div className='mySkills col-xl-2 col-lg-3 col-md-4 col-sm-6 col-8 mx-auto' data-aos="flip-left" data-aos-duration="1000">
                             <div className='myskills_container mx-auto'  >
