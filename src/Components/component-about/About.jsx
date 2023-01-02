@@ -10,7 +10,7 @@ const About = ({ handleEnter }) =>{
             <Waypoint
                 onEnter={() => handleEnter(2)}
             />
-            <div className='about_container col-xl-7 col-lg-7 col-md-8 col-sm-10 col-12 '>
+            <div className='about_container col-xl-7 col-lg-7 col-md-8 col-sm-10 col-11 '>
                 <h2 className='section_title '>A PROPOS</h2>
                 <div className="white_line mb-5"></div>
                 <div className='d-flex justify-content-xl-between justify-content-lg-center justify-content-center align-items-start row g-0'> 
