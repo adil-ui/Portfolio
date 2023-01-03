@@ -3,19 +3,19 @@ import './navbar.css'
 let navItem = [
     {
         content : 'ACCUEIL',
-        href : '#Accueil'
+        href : '#home'
     },
     {
         content : 'A PROPOS',
-        href : '#about'
+        href : '#Apropos'
     },
     {
         content : 'EDUCATION',
-        href : '#formation'
+        href : '#education'
     },
     {
         content : 'COMPETENCES',
-        href : '#competences'
+        href : '#comppetences'
     },
     {
         content : 'PROJETS',
@@ -34,12 +34,12 @@ const Navbar = () =>{
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <ul className="navbar-nav mb-2 mb-lg-0 mx-auto" >
                         {
                             navItem.map(item =>{
                                 return(
-                                    <li className={`nav-item me-4 ${item.content === "ACCUEIL" ? 'active' : ""}`}>
-                                        <a className="nav-link fw-bolder text-light"  href={item.href}>{item.content}</a>
+                                    <li className={`nav-item me-4 ${item.content === "ACCUEIL" ? 'active' : ""}`} >
+                                        <a className="nav-link fw-bolder text-light"  href={item.href} >{item.content}</a>
                                     </li>
                                 )
                             })

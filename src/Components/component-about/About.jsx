@@ -6,7 +6,7 @@ import { Waypoint } from 'react-waypoint';
 const About = ({ handleEnter }) =>{
    
     return(
-        <section id='about'>
+        <section id="Apropos">
             <Waypoint
                 onEnter={() => handleEnter(2)}
             />

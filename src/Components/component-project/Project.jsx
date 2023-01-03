@@ -2,7 +2,7 @@ import './Project.css'
 import { Waypoint } from 'react-waypoint'
 import { useState, useEffect } from 'react'
 import { firestore } from "../../config/firebase";
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 /*
 let projectItem = [
     {
@@ -63,7 +63,7 @@ let projectItem = [
 ]*/
 const Project = ({ handleEnter}) =>{
     const [projects, setProjects] = useState([]);
-
+/*
     useEffect(() => {
         onSnapshot(collection(firestore, 'projects'), querySnapshot => {
             const firebaseProjects = []
@@ -75,7 +75,16 @@ const Project = ({ handleEnter}) =>{
             setProjects(firebaseProjects);
         })
     }, [])
-    
+ */
+    useEffect(() => {
+        onSnapshot(query(collection(firestore, 'projects'), orderBy('number')), querySnapshot => {
+          const firebaseProjects = []
+          querySnapshot.forEach(project => {
+            firebaseProjects.push(project.data());
+          })
+          setProjects(firebaseProjects);
+        })
+      }, []);
     return(
         <section className="project" id="projets">
                             <Waypoint

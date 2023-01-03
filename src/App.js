@@ -109,7 +109,7 @@ const App = () => {
                 },
                 detectRetina: true,
             }} />
-            <header id="Accueil">
+            <header id="home">
                 <Navbar />
                 <Hero />
                 <a href="#about" className='btn_down'><i class="bi bi-chevron-double-down"></i></a>
@@ -118,7 +118,7 @@ const App = () => {
                 />
             </header>
             <main>
-                <About handleEnter={handleEnter} />
+                <About  handleEnter={handleEnter} />
                 <Education handleEnter={handleEnter} />
                 <Skills handleEnter={handleEnter}/>
                 <Project handleEnter={handleEnter}/>

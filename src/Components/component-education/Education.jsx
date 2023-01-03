@@ -12,19 +12,24 @@ const educations = [
     right: false
   },
   {
-    title:"Bachelor en Base de données et développement",
-    school: "Miage - Rabat",
+    title:"Bootcamp Développeur Web Full-Stack",
+    school: "3W ACADEMY - Rabat",
     right: true
   },
   {
-    title:"Technicien Spécialisé en Développement Informatique",
+    title:"Bachelor en Base de données et développement",
     school: "Miage - Rabat",
     right: false
   },
   {
+    title:"Technicien Spécialisé en Développement Informatique",
+    school: "Miage - Rabat",
+    right: true
+  },
+  {
     title:"Baccalauréat en sciences de la vie et de la terre",
     school: "Génération Scientifique - Rabat",
-    right: true
+    right: false
   }
 
 ]
@@ -34,10 +39,8 @@ const Education = ({ handleEnter }) =>{
     AOS.init();
   }, [])
     return (
-      <section className="education" id="formation">
-                        <Waypoint
-                onEnter={() => handleEnter(3)}
-            />
+      <section className="education" id="education">
+        <Waypoint onEnter={() => handleEnter(3)}/>
         <h2 className="section_title">EDUCATION</h2>
         <div className="white_line"></div>
         <div className="education_container ">
@@ -54,6 +57,12 @@ const Education = ({ handleEnter }) =>{
             <div className="year_container">
               <div className="year">
                 <p className="fw-bold">2021 2023</p>
+              </div>
+              <div className="line_verticale"></div>
+            </div>
+            <div className="year_container">
+              <div className="year">
+                <p className="fw-bold">2021 5mois</p>
               </div>
               <div className="line_verticale"></div>
             </div>
