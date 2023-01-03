@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import $ from "jquery";
@@ -19,7 +19,6 @@ const App = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
     }, []);
 
     const handleEnter = (index) => {
@@ -109,10 +108,10 @@ const App = () => {
                 },
                 detectRetina: true,
             }} />
-            <header id="home">
+            <header id="accueil">
                 <Navbar />
                 <Hero />
-                <a href="#about" className='btn_down'><i class="bi bi-chevron-double-down"></i></a>
+                <a href="#Apropos" className='btn_down'><i class="bi bi-chevron-double-down"></i></a>
                     <Waypoint
                     onEnter={() => handleEnter(1)}
                 />

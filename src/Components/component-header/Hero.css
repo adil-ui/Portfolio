@@ -11,13 +11,13 @@
     font-size: 4rem;
 }
 .hero_section p{
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 .orange_line{
     width: 100px;
     background-color: #f05f40;
     height: 5px;
-    margin: 10px auto 30px;
+    margin: 20px auto 30px;
     color: #fff;
     border-radius: 10px;
 }

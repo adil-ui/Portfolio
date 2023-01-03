@@ -17,6 +17,7 @@ function checkSize() {
 
 
 $(document).ready(() => {
+  console.log($("svg"))
   setTimeout(() => {
     checkSize()
   }, 1000)

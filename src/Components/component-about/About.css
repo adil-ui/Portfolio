@@ -1,4 +1,4 @@
-#about{
+#Apropos{
     background-color: #191d20;
     padding: 60px 0;
     box-shadow: rgba(0, 0, 0, 0.402) -0px 8px 14px;
@@ -11,9 +11,9 @@
 }
 
 .about_text p:first-child{
-    font-size: 18.5px;
-    line-height: 2.1;
-    text-align: justify;
+    font-size: 1.12rem;
+    line-height: 2;
+    text-align: left;
 }
 .white_line{
     width: 100px;
@@ -31,8 +31,8 @@
 }
 .img_container{
     border: 2px solid #f06040d2;
-    width: 190px;
-    height: 210px;
+    width: 180px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,23 +40,24 @@
     margin: 15px 0;
 }
 .img_container img{
-    width: 80%;
+    width: 100%;
 }
 
 .btn_cv a{
     background-color: #f06040 !important;
     padding: 12px 50px !important;
     border: none !important;
+    transition: .5s;
 }
 .btn_cv a:hover{
     background-color: #cc492c !important;
-    transition: .3s;
 }
 .btn_cv a{
     color: rgb(246, 246, 246) !important;
 }
 .about_container p, .about_container a{
     color: rgb(189, 189, 189);
+    font-size:1.15rem;
 }
 .about_container a:hover{
     color: #b94329;

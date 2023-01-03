@@ -62,7 +62,7 @@ const Education = ({ handleEnter }) =>{
             </div>
             <div className="year_container">
               <div className="year">
-                <p className="fw-bold">2021 5mois</p>
+                <p className="fw-bold">2022 2023</p>
               </div>
               <div className="line_verticale"></div>
             </div>
