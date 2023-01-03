@@ -7,8 +7,8 @@ const Hero = () =>{
     const [text] = useTypewriter({
         words: ['Web Full Stack', 'React - Laravel'],
         loop: 0,
-        typeSpeed : 130,
-        deleteSpeed: 130,
+        typeSpeed : 120,
+        deleteSpeed: 120,
         delaySpeed : 2500,
       })
     return (
