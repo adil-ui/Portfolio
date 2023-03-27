@@ -12,7 +12,7 @@ const Hero = () =>{
         delaySpeed : 2500,
       })
     return (
-      <section className="hero_section" >
+      <section className="hero_section w-100" >
         <div className="myName">
           <div className="App">
             <h1 className='text-light fw-bold'  >Je suis Adil Boussalem</h1>
@@ -20,7 +20,7 @@ const Hero = () =>{
         </div>
         <div className="orange_line"></div>
         <div className="title">
-          <p className="text-light fw-semibold">Développeur {text} <Cursor cursorColor='white'  /></p>
+          <p className="text-light fw-semibold">Développeur <span className='text_color'>{text} <Cursor cursorColor='white'  /></span> </p>
         </div>
       </section>
     );

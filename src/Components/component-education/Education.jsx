@@ -46,7 +46,7 @@ const Education = ({ handleEnter }) =>{
         <div className="education_container ">
           {educations.map(education => (
                     <div data-aos="zoom-out" data-aos-duration="1000"  className={`${education.right ? "row d-md-flex d-sm-block d-block justify-content-end mt-5 pt-5" : "pt-4"}`}>
-                      <div className="education_degree mt-4 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12">
+                      <div className="education_degree mt-4 col-xl-5 col-lg-6 col-md-8 col-11 text-md-start text-center">
                         <p className="fw-semibold mb-4">{ education.title }</p>
                         <p className="fs-5  text-white text-opacity-75">{ education.school } </p>
                       </div>

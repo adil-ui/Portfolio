@@ -14,13 +14,13 @@ const About = ({ handleEnter }) => {
                 <h2 className='section_title '>A PROPOS</h2>
                 <div className="white_line mb-5"></div>
                 <div className='d-flex justify-content-xl-between justify-content-lg-center justify-content-center align-items-start row gx-5'>
-                    <div className='img_container col-xl-3 col-lg-4 col-md-6 col-sm-8 col-8' data-aos="fade-right" data-aos-duration="1000">
-                        <img src="/assets/images/profile.jpg" alt="profil" />
+                    <div className='img_container col-xl-3 col-lg-4 col-md-6 col-8 rounded-3 ' data-aos="fade-right" data-aos-duration="1000">
+                        <img src="/assets/images/profile.jpg" className='w-100 rounded-3' alt="profil" />
                     </div>
-                    <div className='about_text col-xl-9 col-lg-9 col-md-10 col-sm-11 col-11 text-xl-start text-lg-center text-center' data-aos="fade-left" data-aos-duration="1000">
+                    <div className='about_text col-xl-9 col-lg-9 col-md-10  col-11 text-xl-start text-lg-center text-center' data-aos="fade-left" data-aos-duration="1000">
                         <p className='text-light about_me mb-4'>
-                        Je m'appel Adil Boussalem, mon objectif est de devenir chef de projet d'ici 2ans - 3ans  mon domaine de compétence 
-                        est le développement web, je justifie cette compétence par mon parcours pédagogique ci-dessous. <br /><br />
+                        Je m'appel Adil Boussalem, mon objectif est de devenir chef de projet d'ici 2ans - 3ans,  mon domaine de compétence 
+                        est le développement web, je justifie cette compétence par mon parcours pédagogique ci-dessous(section education). <br /><br />
 
                             Et pour Affiner mes skills, j'ai intégré le bootcamp de Développement Web Full Stack à la 3W ACCADEMY, où j'ai passé : <br />
                             +600 heures de pratique, <br />
@@ -30,7 +30,7 @@ const About = ({ handleEnter }) => {
                             - Blog (PHP) <br />
                             - E-commerce (Laravel) <br />
                             - E-commerce (ReactJs - Laravel) <br />
-                            - site annonces immobilier (reactjs - laravel) <br /><br />
+                            - Site annonces immobilier (reactjs - laravel) <br /><br />
 
                            Aujourd'hui, ma prochaine étape dans mon plan professionnel c'est la recherche d'un "STAGE" ou "EMPLOI".
                         </p>

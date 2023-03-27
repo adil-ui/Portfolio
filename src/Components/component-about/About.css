@@ -1,83 +1,87 @@
-#Apropos{
+#Apropos {
     background-color: #191d20;
     padding: 60px 0;
     box-shadow: rgba(0, 0, 0, 0.402) -0px 8px 14px;
 
 }
 
-.about_container{
+.about_container {
     margin: auto;
 
 }
 
-.about_text p:first-child{
+.about_text p:first-child {
     font-size: 1.12rem;
     line-height: 2;
     text-align: left;
 }
-.white_line{
+
+.white_line {
     width: 100px;
     height: 3px;
     border-radius: 5px;
     background-color: white;
-    margin: 15px auto  40px;
+    margin: 15px auto 40px;
 }
-.section_title{
+
+.section_title {
     color: #f06040;
     font-weight: 600;
     text-align: center;
     padding: 10px 0;
     font-size: 2.5rem;
 }
-.img_container{
-    border: 2px solid #f06040d2;
-    width: 180px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin: 15px 0;
-}
+
 .img_container img{
-    width: 100%;
+    border: 3px solid #f06040d2;
+
 }
 
-.btn_cv a{
+
+.btn_cv a {
     background-color: #f06040 !important;
     padding: 12px 50px !important;
     border: none !important;
     transition: .5s;
 }
-.btn_cv a:hover{
+
+.btn_cv a:hover {
     background-color: #cc492c !important;
 }
-.btn_cv a{
+
+.btn_cv a {
     color: rgb(246, 246, 246) !important;
 }
-.about_container p, .about_container a{
+
+.about_container p,
+.about_container a {
     color: rgb(189, 189, 189);
-    font-size:1.15rem;
+    font-size: 1.15rem;
 }
-.about_container a:hover{
+
+.about_container a:hover {
     color: #b94329;
 }
-.about_container .bi{
+
+.about_container .bi {
     font-size: 22px;
     margin-right: 5px;
 }
+
 @media screen and (max-width: 1200px) {
-    .about_text p:first-child{
+    .about_text p:first-child {
         font-size: 17px;
         line-height: 1.8;
         text-align: center;
         margin-top: 20px;
     }
-    .img_container{
+
+    .img_container {
         width: 170px;
         height: 190px;
     }
 }
-.about_me{
+
+.about_me {
     font-size: 16px !important;
 }
