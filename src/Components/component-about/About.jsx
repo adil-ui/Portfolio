@@ -19,8 +19,8 @@ const About = ({ handleEnter }) => {
                     </div>
                     <div className='about_text col-xl-9 col-lg-9 col-md-10  col-11 text-xl-start text-lg-center text-center' data-aos="fade-left" data-aos-duration="1000">
                         <p className='text-light about_me mb-4'>
-                        Je m'appel Adil Boussalem, mon objectif est de devenir chef de projet d'ici 2ans - 3ans,  mon domaine de compétence 
-                        est le développement web, je justifie cette compétence par mon parcours pédagogique ci-dessous(section education). <br /><br />
+                            Je m'appel Adil Boussalem, mon objectif est de devenir chef de projet d'ici 2ans - 3ans,  mon domaine de compétence
+                            est le développement web, je justifie cette compétence par mon parcours pédagogique ci-dessous(section education). <br /><br />
 
                             Et pour Affiner mes skills, j'ai intégré le bootcamp de Développement Web Full Stack à la 3W ACCADEMY, où j'ai passé : <br />
                             +600 heures de pratique, <br />
@@ -32,7 +32,7 @@ const About = ({ handleEnter }) => {
                             - E-commerce (ReactJs - Laravel) <br />
                             - Site annonces immobilier (reactjs - laravel) <br /><br />
 
-                           Aujourd'hui, ma prochaine étape dans mon plan professionnel c'est la recherche d'un "STAGE" ou "EMPLOI".
+                            Aujourd'hui, ma prochaine étape dans mon plan professionnel c'est la recherche d'un "STAGE" ou "EMPLOI".
                         </p>
                         <p><i class="bi bi-envelope-fill"></i> adilboussaleem@gmail.com</p>
                         <p><a href="https://github.com/adil-ui" target='_blank' rel="noreferrer"><i class="bi bi-github"></i> Github</a></p>
