@@ -15,7 +15,7 @@ const About = ({ handleEnter }) => {
                 <div className="white_line mb-5"></div>
                 <div className='d-flex justify-content-xl-between justify-content-lg-center justify-content-center align-items-start row gx-5'>
                     <div className='img_container col-xl-3 col-lg-4 col-md-6 col-8 rounded-3 ' data-aos="fade-right" data-aos-duration="1000">
-                        <img src="/assets/images/profile.jpg" className='w-100 rounded-3' alt="profil" />
+                        <img src="assets/images/profile.jpg" className='w-100 rounded-3' alt="profil" />
                     </div>
                     <div className='about_text col-xl-9 col-lg-9 col-md-10  col-11 text-xl-start text-lg-center text-center' data-aos="fade-left" data-aos-duration="1000">
                         <p className='text-light about_me mb-4'>
