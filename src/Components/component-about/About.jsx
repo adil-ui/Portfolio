@@ -39,7 +39,7 @@ const About = ({ handleEnter }) => {
                         <p><a href="https://www.linkedin.com/in/adil-boussalem-33641b202/" target='_blank' rel="noreferrer"><i class="bi bi-linkedin"></i> Linkedin</a></p>
                         <p><i class="bi bi-telephone-fill"></i> 06 10 47 38 90</p>
                         <div className='btn_cv mt-5'>
-                            
+                            <a href="assets/cv/CV_ADIL_BOUSSALEM.pdf" className='text-light fw-semibold rounded-1' target='_blank' rel="noreferrer">Télécharger CV</a>
                         </div>
                     </div>
                 </div>
