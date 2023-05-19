@@ -19,13 +19,13 @@ const About = ({ handleEnter }) => {
                     </div>
                     <div className='about_text col-xl-9 col-lg-9 col-md-10  col-11 text-xl-start text-lg-center text-center' data-aos="fade-left" data-aos-duration="1000">
                         <p className='text-light about_me mb-4'>
-                            Je m'appel Adil Boussalem, mon objectif est de devenir chef de projet d'ici 2ans - 3ans,  mon domaine de compétence
+                            Je m'appelle Adil Boussalem, mon objectif est de devenir chef de projet d'ici 2ans - 3ans,  mon domaine de compétence
                             est le développement web, je justifie cette compétence par mon parcours pédagogique ci-dessous(section education). <br /><br />
 
                             Et pour Affiner mes skills, j'ai intégré le bootcamp de Développement Web Full Stack à la 3W ACCADEMY, où j'ai passé : <br />
                             +600 heures de pratique, <br />
-                            +20 mini projet, <br />
-                            5 projet réel: <br />
+                            +20 mini-projets, <br />
+                            5 projets réels: <br />
                             - Mon portfolio (Reactjs) <br />
                             - Blog (PHP) <br />
                             - E-commerce (Laravel) <br />
@@ -37,7 +37,6 @@ const About = ({ handleEnter }) => {
                         <p><i class="bi bi-envelope-fill"></i> adilboussaleem@gmail.com</p>
                         <p><a href="https://github.com/adil-ui" target='_blank' rel="noreferrer"><i class="bi bi-github"></i> Github</a></p>
                         <p><a href="https://www.linkedin.com/in/adil-boussalem-33641b202/" target='_blank' rel="noreferrer"><i class="bi bi-linkedin"></i> Linkedin</a></p>
-                        <p><i class="bi bi-telephone-fill"></i> 06 10 47 38 90</p>
                         <div className='btn_cv mt-5'>
                             <a href="assets/cv/CV_ADIL_BOUSSALEM.pdf" className='text-light fw-semibold rounded-1' target='_blank' rel="noreferrer">Télécharger CV</a>
                         </div>
