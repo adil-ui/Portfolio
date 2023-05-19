@@ -26,11 +26,11 @@ const About = ({ handleEnter }) => {
                             +600 heures de pratique, <br />
                             +20 mini-projets, <br />
                             5 projets réels: <br />
-                            - Mon portfolio (Reactjs) <br />
+                            - Mon portfolio (ReactJs) <br />
                             - Blog (PHP) <br />
                             - E-commerce (Laravel) <br />
                             - E-commerce (ReactJs - Laravel) <br />
-                            - Site annonces immobilier (reactjs - laravel) <br /><br />
+                            - Site annonces immobilières (ReactJs - Laravel) <br /><br />
 
                             Aujourd'hui, ma prochaine étape dans mon plan professionnel c'est la recherche d'un "STAGE" ou "EMPLOI".
                         </p>
